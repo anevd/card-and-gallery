@@ -1,0 +1,72 @@
+/* Стили для карточек */
+.card {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.card__item {
+	width: 20vw;
+	height: min-content;
+	padding: 30px;
+	border: 2px solid black;
+	cursor: pointer;
+	background-color: bisque;
+}
+
+.card__title {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.card__descr {
+	text-align: center;
+}
+
+.selected {
+	background-color: darkcyan;
+}
+
+/* Стили для карусели */
+.carousel {
+	display: grid;
+	grid-template-columns: 5% 1fr 5%;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 100px;
+	position: relative;
+	width: 40vw;
+	height: 255px;
+	padding: 30px;
+	border-radius: 10px;
+	background-color: bisque;
+}
+
+.carousel__content {
+	position: relative;
+	padding: 0 10px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.carousel img {
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+	height: 100%;
+}
+
+.arrow {
+	height: 30px;
+	border: none;
+	color: brown;
+	font-size: 1rem;
+	background-color: burlywood;
+	cursor: pointer;
+}
+
+.arrow:hover {
+	background-color: rgb(235, 196, 144);
+}
